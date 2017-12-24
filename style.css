@@ -6,7 +6,7 @@
   background: #FFD4D4;
   list-style: none;
   height:4200px;
-    margin-left: 25px;
+  margin-left: 25px;
   margin-right:25px;
 }
 
@@ -25,6 +25,7 @@ header {
 
   background-color: rgba(0,0,0,0);
 }
+
 
 header .circular-image {
   width:100px;
@@ -177,7 +178,7 @@ ul.options li a.button:hover svg {
   font-size: 25px;
   color:#A75151;
   position:relative;
-  line-height: 200px;
+  line-height: 150px;
   top:10%;
   text-align: center;
   text-decoration: underline;
@@ -220,7 +221,22 @@ a[ id= "#contact" ]:target ~ #pages article.panel {
   font-size: 15px;
   color:#A75151;
   position:relative;
-  line-height: 200px;
+  line-height: 25px;
+  top:10%;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+  display:block;
+  margin:0 auto;
+}
+
+.panel h1.skillz {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  color:#A75151;
+  position:relative;
+  line-height: 30px;
   top:10%;
   text-align: center;
   text-decoration: none;
@@ -231,7 +247,7 @@ a[ id= "#contact" ]:target ~ #pages article.panel {
 article.panel .github {
   display:block;
   margin:0 auto;
-  margin-top: 10%;
+  margin-top: 20%;
   width: 100px;
   height:100px;
   fill: #000000;
@@ -246,7 +262,10 @@ article.panel .github {
   -moz-appearance: none;
 
 }
+
 article.panel svg{
+  display:block;
+  margin:0 auto;
   height:100px;
   width:100px;
 }
@@ -264,7 +283,7 @@ article.panel .linkedIn {
   margin-top: 10%;
   width: 100px;
   height:100px;
-  fill: #3D7DD3;
+  fill: #2E4D8B;
   background: none;
   box-shadow: none;
   outline:none;
@@ -279,5 +298,46 @@ article.panel .linkedIn {
 
 article.panel .linkedIn:hover {
       transition:0.3s ease;
+  fill:#fff;
+}
+
+
+
+footer {
+
+  position:absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  color:#A75151;
+  background: #FFD4D4;
+  right:0;
+  left:0;
+  z-index: 999;
+  text-align: center;
+
+
+}
+
+.email {
+
+  display:block;
+  margin:0 auto;
+  margin-top: 10%;
+  width: 100px;
+  height:100px;
+  fill: #B55A5A;
+  background: none;
+  box-shadow: none;
+  outline:none;
+  cursor:pointer;
+  border:0px;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.email:hover svg {
+  transition:0.3s ease;
   fill:#fff;
 }
