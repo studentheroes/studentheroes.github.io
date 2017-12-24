@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+ body {
+   width:100%
+  font-family: 'Press Start 2P', cursive;
+  background: #FFD4D4;
+  list-style: none;
+  height:4200px;
+  margin:0;
+}
+
+header {
+
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  color:#A75151;
+  background: #FFD4D4;
+
+  position:fixed;
+  right:0;
+  left:0;
+  z-index: 999;
+  list-style: none;
+
+  background-color: rgba(0,0,0,0);
+}
+
+header .circular-image {
+  width:100px;
+  height:100px;
+  border-radius: 50%
+}
+
+header div.MarthVader {
+
+  float:right;
+  padding: 25px 30px 0 0;
+  z-index:999;
+
+}
+
+
+header div.topnav {
+
+
+  float:left;
+  z-index:999;
+  display:block;
+
+  text-align: left;
+background-color: rgba(0,0,0,0);
+
+
+}
+
+
+header div.topnav ul.options {
+  fill:#FFD4D4;
+  margin: 0x;
+  display:block;
+  list-style: none;
+  float:left;
+  align-items: left;
+  padding: 10px 25px 25px 25px;
+}
+
+
+header div.topnav ul.options li {
+
+
+  display:block;
+  text-align: left;
+  background-color: rgba(0,0,0,0);
+}
+
+ul.options li a.button {
+
+  width:60px;
+  height:60px;
+  display:block;
+
+  fill:#A75151;
+  background: none;
+  box-shadow: none;
+  outline:none;
+  cursor:pointer;
+  border:0px;
+  align:center;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+ul.options li a.button:hover svg {
+
+    transition:0.3s ease;
+      fill:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnav nav {
+  width: 100%;
+
+  position: fixed;
+  left: 0; top: 0;
+  width:100%;
+  height: 3.5rem;
+  z-index: 0;
+}
+
+.topnav nav ul {
+  list-style: none;
+  width: 100%
+  margin: 0;
+}
+
+.topnav ul li:nth-child( 3n + 1), #pages .panel:nth-child( 3n + 1) {
+
+}
+
+.topnav ul li:nth-child( 3n + 2), #pages .panel:nth-child( 3n + 2) {
+
+}
+
+.topnav ul li:nth-child( 3n + 3), #pages .panel:nth-child( 3n + 3) {
+
+}
+
+.topnav ul li:nth-child( 3n + 4), #pages .panel:nth-child( 3n + 4) {
+
+}
+
+
+.topnav ul li {
+  display: inline-block;
+  border-radius: 0px;
+  line-height: 1.5;
+}
+.topnav ul li a {
+
+  text-decoration: none;
+
+}
+.panel {
+  width: 100%;
+  height: 1000px; /* Your DIVs Height */
+  z-index:0;
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.panel h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  color:#A75151;
+  position:relative;
+  line-height: 200px;
+  top:10%;
+  text-align: center;
+  text-decoration: underline;
+
+  margin: 0;
+}
+
+/* Smooth CSS3 Scrolling */
+a[ id= "#home" ]:target ~ #pages article.panel {
+
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
+}
+a[ id= "#personal" ]:target ~ #pages article.panel {
+  -webkit-transform: translateY( -1000px);
+  transform: translateY( -1000px );
+}
+a[ id= "#projects" ]:target ~ #pages article.panel {
+  -webkit-transform: translateY( -2000px );
+  transform: translateY( -2000px );
+}
+a[ id= "#contact" ]:target ~ #pages article.panel {
+  -webkit-transform: translateY( -3000px );
+  transform: translateY( -3000px );
+}
+
+
+ article.panel .circular-image {
+  display:block;
+  margin:0 auto;
+  margin-top: 15%;
+  width:400px;
+  height:400px;
+  border-radius: 50%
+}
+
+
+.panel h1.current {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  color:#A75151;
+  position:relative;
+  line-height: 200px;
+  top:10%;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+}
+
+article.panel .github {
+  display:block;
+  margin:0 auto;
+  margin-top: 10%;
+  width: 100px;
+  height:100px;
+  fill: #000000;
+  background: none;
+  box-shadow: none;
+  outline:none;
+  cursor:pointer;
+  border:0px;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+article.panel svg{
+  height:100px;
+  width:100px;
+}
+
+article.panel .github:hover {
+      transition:0.3s ease;
+      -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+
+article.panel .linkedIn {
+  display:block;
+  margin:0 auto;
+  margin-top: 10%;
+  width: 100px;
+  height:100px;
+  fill: #3D7DD3;
+  background: none;
+  box-shadow: none;
+  outline:none;
+  cursor:pointer;
+  border:0px;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+article.panel .linkedIn:hover {
+      transition:0.3s ease;
+  fill:#fff;
+}
